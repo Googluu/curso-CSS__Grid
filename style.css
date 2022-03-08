@@ -1,0 +1,107 @@
+.contenedor {
+    border: 10px solid red;
+    background-color: black;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    place-content: center;
+}   
+.item {
+    font-size: 4rem;
+    margin: 2px;
+    padding: 2px;
+}
+.item-1 {
+    border: 5px solid #e1bee7;
+    background-color: #ffeeff;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.item-1 img {
+    width: 132px;
+    height: 135px;
+}
+.item-2 {
+    border: 5px solid #f8bbd0;
+    background-color: #fff1ff;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.item-2 img {
+    width: 283px;
+    height: 135px;
+} 
+.item-3 {
+    border: 5px solid red;
+    background-color: #e5ffff;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item-3 img {
+    width: 283px;
+    height: 135px;
+}
+.item-4 {
+    border: 5px solid yellow;
+    background-color: #e5ffff;
+}
+.item-4 img {
+    width: 132px;
+    height: 135px;
+}
+.item-5 {
+    border: 5px solid green;
+    background-color: #e5ffff;
+}
+.item-5 img {
+    width: 132px;
+    height: 135px;
+}
+.item-6 {
+    border: 5px solid blue;
+    background-color: #e5ffff;
+}
+.item-6 img {
+    width: 132px;
+    height: 135px;
+}
+.item-7 {
+    border: 5px solid blueviolet;
+    background-color: #e5ffff;
+}
+.item-7 img {
+    width: 132px;
+    height: 135px;
+}
+/* Funciones Especiales */
+.container {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: minmax(30px, 300px) 200px minmax(60px, 250px);
+    grid-template-rows: repeat(3, auto);
+}
+.iten {
+    border: 5px solid #00bcd4;
+    font-size: 2rem;
+}
+/* Keywords Especiales */
+.container-item {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));/*se cambia la cantidad de veces por el auto-fit*/
+}
+.container-item-2 {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+.itmen {
+    border: 5px solid #00bcd4;
+    font-size: 2rem;
+}
