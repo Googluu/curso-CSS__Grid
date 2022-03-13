@@ -1,3 +1,20 @@
+.title-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.title-section h1 {
+    grid-column: 1;
+    margin: 5px;
+    color: white;
+    background-color: black;
+}
+.title-section h2 {
+    grid-column: 2;
+    font-size: 30px;
+    margin: 5px;
+    color: white;
+    background-color: black;
+}
 .contenedor {
     border: 10px solid red;
     background-color: black;
@@ -7,7 +24,7 @@
     grid-template-columns: repeat(3, 150px);
     grid-template-rows: repeat(3, 150px);
     place-content: center;
-}   
+}
 .item {
     font-size: 4rem;
     margin: 2px;
@@ -19,7 +36,7 @@
     grid-column-start: 1;
     grid-column-end: 2;
 }
-.item-1 img {
+.item-1 img { 
     width: 132px;
     height: 135px;
 }
@@ -75,33 +92,4 @@
     width: 132px;
     height: 135px;
 }
-/* Funciones Especiales */
-.container {
-    border: 5px solid #e1bee7;
-    background-color: #fff1ff;
-    display: grid;
-    grid-template-columns: minmax(30px, 300px) 200px minmax(60px, 250px);
-    grid-template-rows: repeat(3, auto);
-}
-.iten {
-    border: 5px solid #00bcd4;
-    font-size: 2rem;
-}
-/* Keywords Especiales */
-.container-item {
-    border: 5px solid #e1bee7;
-    background-color: #fff1ff;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));/*se cambia la cantidad de veces por el auto-fit*/
-}
-.container-item-2 {
-    border: 5px solid #e1bee7;
-    background-color: #fff1ff;
-    display: grid;
-    margin-top: 100px;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-}
-.itmen {
-    border: 5px solid #00bcd4;
-    font-size: 2rem;
-}
+
